@@ -34,4 +34,4 @@ random.shuffle(temp_password)
 
 result = "".join(temp_password)
 
-print(f"Your password: {result}\nTotal number of letters: {letters}\nTotal number of number: {nums}\nTotal number of symbols: {sy}")
+print(f"Your password: {result}\nTotal number of letter(s): {letters}\nTotal number of number(s): {nums}\nTotal number of symbol(s): {sy}")
