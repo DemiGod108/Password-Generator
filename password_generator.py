@@ -15,22 +15,19 @@ sy = int(input("How many symbols do you wanna include in your password: "))
 
 
 temp_password = []
+c = letters+nums+sy
 
+for i in range(c):
+	if i<letters:
+		temp_password.append(random.choice(alpha))
+		
+	if i<nums:
+		temp_password.append(random.choice(numbers))
+		
+	if i<sy:
+		temp_password.append(random.choice(symbols))
 
-for l in range(letters):
-	temp_password.append(random.choice(alpha))
-	
-	
-for num in range(nums):
-	temp_password.append(random.choice(numbers))
-	
-	
-for s in range(sy):
-	temp_password.append(random.choice(symbols))
-	
-	
 random.shuffle(temp_password)
-
 
 result = "".join(temp_password)
 
